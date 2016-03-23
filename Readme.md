@@ -16,9 +16,9 @@ This should explain **why** the project exists.
 
 ## Installation
 
-1) Clone or fork site
-2) Copy contents of web-app to root of your web folder
-3) - add other instructions here
+1. Clone or fork site
+2. Copy contents of web-app to root of your web folder
+3. - add other instructions here
 
 
 ## Section 1
