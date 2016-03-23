@@ -24,9 +24,9 @@ Describe and show how to run the tests with code examples.
 
 ## Contributors
 
-[Alex Kuo](mailto://alexkuo89@gmail.com)
-[Chris Bautista](mailto://chris@codespud.ca)
-[Fernando Mancilla](mailto://mancilla.fernando@yahoo.com)
+* [Alex Kuo](mailto://alexkuo89@gmail.com)
+* [Chris Bautista](mailto://chris@codespud.ca)
+* [Fernando Mancilla](mailto://mancilla.fernando@yahoo.com)
 
 ## License
 
