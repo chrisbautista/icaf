@@ -1,5 +1,6 @@
 ## Synopsis
-
+    overflow: hidden;
+    height: 81px;
 COMP1950 Website
 
 ## Important URLs

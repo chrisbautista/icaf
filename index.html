@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--  
+
+ _____  _____ _      ____  _     ____  _____  _____   ____ ___  _    
+/__ __\/  __// \__/|/  __\/ \   /  _ \/__ __\/  __/  /  _ \\  \//  __
+  / \  |  \  | |\/|||  \/|| |   | / \|  / \  |  \    | | // \  /   \/
+  | |  |  /_ | |  |||  __/| |_/\| |-||  | |  |  /_   | |_\\ / /    __
+  \_/  \____\\_/  \|\_/   \____/\_/ \|  \_/  \____\  \____//_/     \/
+
+
+
+   ____ _          _       _ _  ____ ___  ____  _____ ____  ____  _   _ ____  _ _   ____              _   _     _        
+  / ___| |__  _ __(_)___  ( | )/ ___/ _ \|  _ \| ____/ ___||  _ \| | | |  _ \( | ) | __ )  __ _ _   _| |_(_)___| |_ __ _ 
+ | |   | '_ \| '__| / __|  V V| |  | | | | | | |  _| \___ \| |_) | | | | | | |V V  |  _ \ / _` | | | | __| / __| __/ _` |
+ | |___| | | | |  | \__ \     | |__| |_| | |_| | |___ ___) |  __/| |_| | |_| |     | |_) | (_| | |_| | |_| \__ \ || (_| |
+  \____|_| |_|_|  |_|___/      \____\___/|____/|_____|____/|_|    \___/|____/      |____/ \__,_|\__,_|\__|_|___/\__\__,_|
+
+
+
+ BCIT: Comp1950 Web Design and Development 2
+ Professor: Alistair Calder
+ Winter 2015-2016
+ 
+-->    
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/grid.css"> 
+   <style>
+        body {
+            background-color: #343a40;
+            color: #444;
+            margin-top: 80px;
+            margin-bottom:70px;
+       }
+       
+       aside {
+           background-color: #FFF;
+           padding: 2em;
+       }
+       
+       a {
+           color: rgb(221, 87, 76);    
+       }
+       
+       a:hover {
+           text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+       }
+       
+       .sidebar {
+               display:none;
+               width:100%;
+        }
+       
+      
+       
+       main.posts {
+           width: 100%;
+           margin: 12px 0 0;
+       }
+       
+       .js-toggle-menu {
+           display: inline-block;
+            /* float: left; */
+            margin: 0.5em 1em;
+            font-size: 1.6em;
+            z-index: 1000;
+            position: absolute;
+            top: 0;
+            left: 0;
+       }
+       
+       .js-toggle-menu a{
+           text-decoration:none;
+       }
+       
+       .sidebar .form-wrapper input {
+           margin: 0.5em 0;
+           padding: 0.5em;
+           width:100%;
+           /*min-width: 138px;*/
+           box-sizing: border-box;
+
+       }
+
+       .sidebar .form-wrapper input[type=submit]{
+           border: 1px solid red;
+           width: 100%;
+           display:table;
+
+       }
+         
+       .sidebar li {
+           
+           padding: 0.5em 0 1em;
+           list-style: none;
+           border-bottom: 1px solid rgba(0,0,0,0.1);
+           
+       }
+       
+       .sidebar li:first-child {
+           padding: 2em 0 1em;
+           margin: 1em 0;
+       }
+       
+       .sidebar li:last-child {
+           border: 0;        
+       }
+       
+
+       .sidebar a {
+           text-decoration: none;
+           color: #A0A0A0;
+       }
+       
+       .sidebar .social h4 {
+           display: none;
+       }
+       
+       .sidebar .social div {
+           width: 35%;
+           float: left;
+       }
+       
+       .sidebar .social span {
+           display: none;
+       }
+       
+       .container {
+           padding:0;
+       }
+       
+       .posts article {
+           margin-top: 12px;    
+       }
+       
+       .posts article:first-child {
+           padding-top:0;
+           margin-top: -0.1em;
+       }
+       
+       
+       .post-thumbnail {
+           width: 100%;
+               overflow: hidden;
+               position: relative;
+               max-height:340px;
+       }
+       
+       .post-thumbnail img {
+           margin:0 auto;
+           width:100%;
+           
+       }
+       
+       .entry-content {
+           background-color: #FFF;
+           padding:1em;
+           
+       }
+       
+       div.post-thumbnail ~ div.entry-content {
+            margin: -12px 0 0;   
+       }
+       
+       footer, .more-posts-wrapper {
+           padding: 1em;
+       }
+       
+       header {
+           background-color: #FFF;
+           
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        height: 50px;
+        padding: 1em 1em 0.2em 0;
+        color: #000000;
+       }
+       
+       
+       .main-title {
+           display: inline-block;
+           padding: 0;
+           margin: 0 0.2em 0 4.5em;
+           text-align:right;
+           float:left;
+       }
+       
+       .main-title h1 {
+          margin:0;
+       }
+        
+        .header a { text-decoration:none; color:#444;}
+       
+       header h1 {
+            font-size: 2em;
+       }
+       header p {
+           font-size: 90% ;
+           display:none;
+       }
+       
+       header img {
+           display:none;
+       }
+       
+       footer {
+           background: #DD574C;
+           min-height: 90px;
+           color: #FFF;
+           
+       }
+       
+       footer a {color: #FFF;}
+       
+       .template-author {
+           font-size: 0.9em;
+       }
+       
+       .more-posts-wrapper {
+           box-sizing: border-box;
+           width:100%;
+           background-color: #FFF;
+           border-top: 1px solid #CCC;
+           margin-top: 12px;
+           position: fixed; bottom:0;
+         padding: 0;
+           left:0;
+       }
+       
+       .more-posts-wrapper a { text-decoration: none;}
+       
+       .pages-wrapper {
+           display:none;
+           
+       }
+       
+       .prev-wrapper, .next-wrapper {
+           padding: 0.2em;
+           font-size: 2em;
+           width:50%;
+           text-align: center;
+       }
+       
+       
+       .prev-wrapper {float:left;border-right:1px solid #ccc;}
+       .next-wrapper {
+            float: right !important;
+            border-left:1px solid #ccc;}
+       
+       /**
+       
+       * 550px and greater
+       
+       **/
+       
+       @media screen and (min-width:550px){
+           
+           body {
+               margin-top: 120px;
+               margin-bottom: 0;
+           }
+           
+           header, .posts,  footer {
+               padding: 1.8em;
+           }
+           
+           header img {
+               display:inline-block;
+               float:left;
+           }
+           
+           header h1 {
+               font-size: 2.1em;
+           }
+           
+           header p {
+               display:inline-block;
+           }
+           
+           .main-title {
+               float:left;
+               margin: 0 2em;
+               text-align: left;
+           }
+           
+           .sidebar {
+               display: inline-block;
+               min-height: 560px;
+               padding:0.9em;
+               font-size: 14px;
+           }
+           
+           .sidebar .social {
+               border-bottom: 1px solid #CCC;
+               padding: 0em 0.2em 1.2em;
+           }
+           
+           .sidebar .social h4 {
+           display: block;
+           margin: 2em 0 0.8em;
+           }
+           
+           .sidebar .social div {
+               float: none;
+               clear:both;
+               display:block;
+               width:100%;
+           }
+
+           .sidebar .social span, .sidebar .social a {
+               display:inline;
+               float:left;
+               font-size: 0.9em;
+               
+           }
+           
+           
+           
+
+           .js-toggle-menu {display: none;}
+           
+           
+
+           .posts {
+               padding: 1.8em 0 1.8em 0.8em;
+           }
+           
+           .posts  {
+               width:auto; 
+               display: inline-block;
+           }
+            
+            .posts article {
+            margin-top: 2em;    
+            }
+           
+           .posts article:first-child {
+               margin-top: -2.5em;
+           }
+           
+            .entry-content {
+               padding:2em;
+              
+           }
+           
+            .posts article:first-child > .entry-content {
+                margin: -2.6em 0 0;
+            }
+
+            .posts article:first-child > .post-thumbnail ~ .entry-content {
+                margin: 0;
+            }
+           
+           
+           .more-posts-wrapper {
+               position: static;
+               width:100%;
+           }
+           
+           footer {
+               min-height: 100px;
+           }
+           
+           .pages-wrapper {
+               display:inline-block;
+               float:left;
+               padding: 0.2em;
+               text-align: center;
+           }
+           
+           .pages-wrapper li {
+               list-style: none;
+               display:inline-block;
+               width: auto;
+           }
+
+       }
+        @media screen and (min-width:750px){
+
+             header, .posts, .sidebar, footer {
+               padding: 1.8em;
+           }
+
+           .posts {
+               padding: 1.8em 0 1.8em 1.8em;
+           }
+       }
+       
+       .template-url {
+           padding: 2em;
+           background-color: #FFF;
+           text-align: center;
+           margin:1em 0;
+       }
+   </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <header class="row header" role="banner">
+            <span class="avatar"><a href="me"><img src="http://placehold.it/50" alt="my avatar"></a></span>
+            <div class="main-title"><h1>Icaf</h1>
+            <p>A not so usual world</p></div>
+        
+            <span class="js-toggle-menu"><a href="#">[&#61;]</a>  </span>  
+        </header>
+        <div class="row">
+            <aside class="three columns sidebar" role="complementary">
+                <div class="form-wrapper">
+                 <form role="search">
+                  <input type="search" placeholder="Need to find something?">
+                </form>
+
+                </div>
+                
+                <div class="social row">
+                    <h4>SOCIAL LINKS</h4>
+                    <div><span>Twitter:</span> <a href="http://twitter.com/">{twitter}</a></div>
+                    <div><span>Instagram:</span> <a href="http://instagram.com/">{instagram}</a></div>
+                </div>
+
+                <nav role="navigation">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Home</a></li>
+                </nav>
+            </aside>
+        
+        <main role="main" class="nine columns posts">
+            
+            <article class="post post-type-text">
+				
+			<!-- Put post thumbnail (if any) -->
+				<div class="post-thumbnail listing-preview">
+				    <a class="sm-small-wrapper" href="http://vervethemes.com/demos/semantic/soaring-spirits-in-the-wild/130"><img  src="http://cdn.vervethemes.com/demos/semantic/files/2014/09/tumblr_nabjwtxvhN1qfirfao1_1280-e1410700109613-370x245.jpg?424b18"></a>
+			    </div>
+						
+			
+				
+		    <!-- Actual content -->
+				<div class="entry-content">
+			
+						<div class="post-meta"><p>
+				         <time class="post-meta-time updated" datetime="2014-09-14T13:11:14+00:00" title="September 14th, 2014 at 01:11pm">About a year ago</time> 
+					         <span class="post-meta-author vcard"> by <a href="http://vervethemes.com/demos/semantic/author/graceng" rel="author" class="fn">Akira Ng</a></span>
+								</p></div> 			
+				         <h2 class="post-title"><a href="http://vervethemes.com/demos/semantic/soaring-spirits-in-the-wild/130" rel="bookmark" title="Soaring Spirits in the Wild">Soaring Spirits in the Wild</a></h2>
+						
+                        <div class="post-content">
+                            <p>Bearishly engagingly checked maladroitly koala mastodon the casually that from less hey seal that and ducked much a splashed fanatically tapir symbolically ferret and ducked much a splashed.
+                        </p>
+                       <p class="read-more"><a href="http://vervethemes.com/demos/semantic/soaring-spirits-in-the-wild/130">Continue reading</a></p>
+                        </div>
+
+						
+		        </div>
+			</article>
+          
+            <article class="post post-type-text">
+				
+			<!-- Put post thumbnail (if any) -->
+				<div class="post-thumbnail listing-preview">
+				    <a class="sm-small-wrapper" href="http://vervethemes.com/demos/semantic/soaring-spirits-in-the-wild/130"><img  src="http://cdn.vervethemes.com/demos/semantic/files/2014/09/tumblr_nabjwtxvhN1qfirfao1_1280-e1410700109613-370x245.jpg?424b18"></a>
+			    </div>
+						
+			
+				
+		    <!-- Actual content -->
+				<div class="entry-content">
+			
+						<div class="post-meta"><p>
+				         <time class="post-meta-time updated" datetime="2014-09-14T13:11:14+00:00" title="September 14th, 2014 at 01:11pm">About a year ago</time> 
+					         <span class="post-meta-author vcard"> by <a href="http://vervethemes.com/demos/semantic/author/graceng" rel="author" class="fn">Akira Ng</a></span>
+								</p></div> 			
+				         <h2 class="post-title"><a href="http://vervethemes.com/demos/semantic/soaring-spirits-in-the-wild/130" rel="bookmark" title="Soaring Spirits in the Wild">Soaring Spirits in the Wild</a></h2>
+						
+                        <div class="post-content">
+                            <p>Bearishly engagingly checked maladroitly koala mastodon the casually that from less hey seal that and ducked much a splashed fanatically tapir symbolically ferret and ducked much a splashed.
+                        </p>
+                       <p class="read-more"><a href="http://vervethemes.com/demos/semantic/soaring-spirits-in-the-wild/130">Continue reading</a></p>
+                        </div>
+
+						
+		        </div>
+			</article>
+           
+            <nav class="more-posts-wrapper row " role="navigation">
+                <div class="prev-wrapper two columns">
+                    <a href="prev.html">&lt;</a>
+                </div>
+                
+                <div class="pages-wrapper eight columns">
+                    <ul>
+                        <li><a href="1.html">1</a></li>
+                        <li><a href="1.html">2</a></li>
+                    </ul>
+                </div>
+                
+                <div class="next-wrapper two columns">
+                    <a href="next.html">&gt;</a>
+                </div>
+            </nav>   
+            
+        </main>
+        </div>
+        
+        
+        
+        
+    </div>
+    <footer role="contentinfo" class="footer row">
+        <div class="nine columns ">Copyright(c) Recollections {CopyrightYears} </div>
+        <div class="three columns social">
+            <a href="twitter">twitter</a>
+            <a href="instagram">instagram</a>
+        </div>
+    </footer>
+    
+    
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script>
+    
+        (function($){
+            
+            $(document).ready(function(){
+                var minWidthMenuIsShown=550;
+
+                $(".js-toggle-menu").on('click',function(){
+                    $('.sidebar').toggle(320); 
+                });
+                
+                $(window).on('resize', function() {
+                    if ($(window).width() > minWidthMenuIsShown) {
+                        $('.sidebar').css('display','inline-block'); 
+                    }else{
+                        $('.sidebar').css('display','none');                     
+                    }
+                });
+            });
+            
+            
+            
+        }(jQuery));
+        
+    </script>	
+</body>
+</html>
+
+<!-- template by : chris bautista -->

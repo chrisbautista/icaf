@@ -1,0 +1,14 @@
+.pic {
+    width: 300px;
+    margin: 50px auto;
+}
+
+.pic img {
+    border-radius: 20px;
+}
+
+nav .columns {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 1em;
+}
