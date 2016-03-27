@@ -4,9 +4,9 @@
 
             <nav class="nine columns " role="navigation">
                 <ul>
-                    <li><a href="index.shtml">Intro</a></li>
-                    <li><a href="rationale.shtml">Rationale</a></li>
-                    <li><a href="webapp/">Demo</a></li>
+                    <li><a href="/">Intro</a></li>
+                    <li><a href="/rationale-page.shtml">Rationale</a></li>
+                    <li><a href="/webapp/">Demo</a></li>
                     <li><a href="http://www.tumblr.com/icaf-guru/">News</a></li>
                     
                 </ul>

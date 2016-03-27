@@ -34,40 +34,33 @@
 <body>
     
     <div class="container">
- 
-        <!--#include file="includes/header.inc" -->
-        <!--#include file="includes/hero.inc" -->
+        <header class="row-full">
+
+            <div class="two columns title-logo">iCAF</div>
+
+            <nav class="nine columns " role="navigation">
+                <ul>
+                    <li><a href="/">Intro</a></li>
+                    <li><a href="/rationale-page.shtml">Rationale</a></li>
+                    <li><a href="/webapp/">Demo</a></li>
+                    <li><a href="http://www.tumblr.com/icaf-guru/">News</a></li>
+                    
+                </ul>
+            </nav>
+
+        </header>
         <div class="row-full pains">
-            <h2><span class="marker">The Question</span></h2>
+            <h2><span class="marker">Inside Page Title</span></h2>
             <div class="content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam autem veniam totam, porro consequuntur voluptatibus reprehenderit nobis dolores eaque repellendus, id, nam est optio commodi! In laudantium tempore, saepe quas.</p>
             </div>
             
         </div>
-        <div class="row-full solution">
-            <h2><span class="marker">Our Answer!</span></h2>
-
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam autem veniam totam, porro consequuntur voluptatibus reprehenderit nobis dolores eaque repellendus, id, nam est optio commodi! In laudantium tempore, saepe quas.</p>
-            </div>
-        </div>
-        <div class="row-full features">
-            <h2><span class="marker">Features</span></h2>
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam autem veniam totam, porro consequuntur voluptatibus reprehenderit nobis dolores eaque repellendus, id, nam est optio commodi! In laudantium tempore, saepe quas.</p>
-            </div>
-        </div>
-        <div class="row-full audience">
-            <h2><span class="marker">Our Target Audience</span></h2>
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam autem veniam totam, porro consequuntur voluptatibus reprehenderit nobis dolores eaque repellendus, id, nam est optio commodi! In laudantium tempore, saepe quas.</p>
-            </div>
-        </div>
         
       
         <!--#include file="includes/footer.inc" -->
 
-        
+
     </div> <!-- ./ container -->
 </body>
 </html>
