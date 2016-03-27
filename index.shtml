@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--  
+
+ _____  _____ _      ____  _     ____  _____  _____   ____ ___  _    
+/__ __\/  __// \__/|/  __\/ \   /  _ \/__ __\/  __/  /  _ \\  \//  __
+  / \  |  \  | |\/|||  \/|| |   | / \|  / \  |  \    | | // \  /   \/
+  | |  |  /_ | |  |||  __/| |_/\| |-||  | |  |  /_   | |_\\ / /    __
+  \_/  \____\\_/  \|\_/   \____/\_/ \|  \_/  \____\  \____//_/     \/
+
+
+
+   ____ _          _       _ _  ____ ___  ____  _____ ____  ____  _   _ ____  _ _   ____              _   _     _        
+  / ___| |__  _ __(_)___  ( | )/ ___/ _ \|  _ \| ____/ ___||  _ \| | | |  _ \( | ) | __ )  __ _ _   _| |_(_)___| |_ __ _ 
+ | |   | '_ \| '__| / __|  V V| |  | | | | | | |  _| \___ \| |_) | | | | | | |V V  |  _ \ / _` | | | | __| / __| __/ _` |
+ | |___| | | | |  | \__ \     | |__| |_| | |_| | |___ ___) |  __/| |_| | |_| |     | |_) | (_| | |_| | |_| \__ \ || (_| |
+  \____|_| |_|_|  |_|___/      \____\___/|____/|_____|____/|_|    \___/|____/      |____/ \__,_|\__,_|\__|_|___/\__\__,_|
+
+
+
+ BCIT: Comp1950 Web Design and Development 2
+ Professor: Alistair Calder
+ Winter 2015-2016
+ 
+-->    
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/grid.css"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!--#include file="includes/header.inc" -->
+       
+        <div class="row row-hero">
+          
+            <h1>Project Guru</h1>
+            <p>Learning Web Development in style</p>
+
+
+            <div class="cta"><a class="btn btn-large" href="/webapp/">Demo</a></div>
+        </div>
+
+        <div class="row">
+            <!--#include file="includes/aside.inc" -->
+        
+        <main role="main" class="nine columns posts">
+            
+ 
+          
+            <article class="post post-type-text">
+				
+			<!-- Put post thumbnail (if any) -->
+				
+						
+			
+				
+		    <!-- Actual content -->
+				<div class="entry-content">
+			
+						<div class="post-meta"><p>
+				         <time class="post-meta-time updated" datetime="2014-09-14T13:11:14+00:00" title="September 14th, 2014 at 01:11pm">About a year ago</time> 
+					         <span class="post-meta-author vcard"> by <a href="http://vervethemes.com/demos/semantic/author/graceng" rel="author" class="fn">Fernando Mancilla</a></span>
+								</p></div> 			
+				         <h2 class="post-title"><a href="http://vervethemes.com/demos/semantic/soaring-spirits-in-the-wild/130" rel="bookmark" title="introduction">Brief Introduction</a></h2>
+						
+                <div class="post-content">
+                    <p>Bearishly engagingly checked maladroitly koala mastodon the casually that from less hey seal that and ducked much a splashed fanatically tapir symbolically ferret and ducked much a splashed.
+                </p>
+               <p class="read-more"><a href="/intro-more.shtml">Continue reading</a></p>
+                </div>
+
+						
+		        </div>
+			</article>
+           
+            
+        </main>
+        </div>
+        
+        
+        
+        
+    </div>
+   
+    <!--#include file="includes/footer.inc" -->
+    
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+    <script>
+    
+        (function($){
+            
+            $(document).ready(function(){
+                var minWidthMenuIsShown=550;
+
+                $(".js-toggle-menu").on('click',function(){
+                    $('.sidebar').toggle(320); 
+                });
+                
+                $(window).on('resize', function() {
+                    if ($(window).width() > minWidthMenuIsShown) {
+                        $('.sidebar').css('display','inline-block'); 
+                    }else{
+                        $('.sidebar').css('display','none');                     
+                    }
+                });
+                var target = $(".row-hero").offset().top;
+                $(window).scroll(function(){
+
+                    if(Math.floor($(window).scrollTop()) === Math.floor(target)){
+                        //alert('madeit');
+                        console.log(new Math.floor($(window).scrollTop()));
+                    }
+
+                });
+
+            });
+            
+            
+            
+        }(jQuery));
+        
+    </script>	
+</body>
+</html>
+
+<!-- template by : chris bautista -->
