@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+.container {
+    max-width: 960px;
+        background: #DFDFDF;
+}
+
+body {
+    background-color: #FFF;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header.row, main.row {
+    width: 100%;
+}
+
+.top {
+    position: absolute;
+    background-color: #0cb395;
+    padding: 12px;
+    clear: both;
+    height: 27px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+}
+
+.top li  {
+    list-style: none;
+    display: inline;
+}
+.top a {
+    text-decoration: none;
+    margin:0;
+    padding:0;
+
+}
+
+.main-nav ul,  .main-nav ul li {
+    display:inline;
+    list-style: none;
+}
+
+
+.main-nav a, .main-nav a:visited {
+    color:#1c3f77;
+    
+}
+.main-nav a {
+    font-size:1.2em;
+    width: auto;
+    margin: 0;
+    padding: 0 1em 0 ;
+    border-right: 2px solid #1c3f77;
+    font-family: "Montserat", sans-serif;
+    text-decoration: none;
+}
+
+
+
+.main-nav li:last-child a {
+    border-right: none;
+}
+
+.hero {
+    background-image: url(images/hero.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 662px;
+    max-width: 912px;
+}
+
+
+.time-line {
+    background: url(../images/timeline.png);
+
+    min-height: 100px;
+    background-repeat: repeat-y;
+}
+.article-right, .article-left{
+      width:427px;
+    max-width: 427px;
+    min-width:427px;
+    height: 253px;
+    background-color: #c0d731;
+    margin-left: 1em;
+    margin-top: 5em;
+    padding: 0;
+    position: relative;
+  margin-top: 2em;
+    clear:both;
+
+}
+
+.article-left{
+    float:left;
+}
+
+.article-right{
+  margin-right: 3em; 
+  float: right;
+}
+
+
+.article-left>div {
+    height: 253px;
+    overflow: hidden;
+}
+
+.article-left h1, .article-right h1 {
+    text-align: center;
+    font-size: 4em;
+        margin-top: -0.3em;
+}
+
+.article-left div.three.article-buttons {
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 85px;
+}
+
+.article-right div.three.article-buttons {
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 85px;
+
+}
+
+div.article-left::after, 
+div.article-right::after{
+    content: "o";
+    background-color: #1c3f77;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    border-radius: 8px;
+    top: 50%;
+    color: #1c3f77;
+    position: absolute;
+}
+
+div.article-left::after{
+    right: -23px;
+}
+div.article-right::after{
+    left: -25px;
+}
+
+
+.article-left div.content {
+    float:left;
+}
+
+.article-right div.content {
+float:right;
+}
+
+
+div.date{
+    height: 128px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #FFF;
+}
+
+div.date div{
+    line-height: 0.95em;
+    text-align: center;
+    width: 100%;
+}
+
+div.day{font-size: 3em;}
+div.month{font-size: 2.5em;}
+div.year{font-size: 2em;}
+
+
+div.article-left:first-child{
+    margin-top: 0;
+}
+
+.article-buttons a {
+    padding: 0;
+    margin: 0;
+}

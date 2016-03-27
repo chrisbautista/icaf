@@ -22,52 +22,78 @@
  BCIT: Comp1950 Web Design and Development 2
  Professor: Alistair Calder
  Winter 2015-2016
- 
--->    
+
+-->
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Project: Guru</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/default.css">
-    <link rel="stylesheet" href="assets/css/grid.css"> 
+    <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
-    
     <div class="container">
- 
         <!--#include file="includes/header.inc" -->
         <!--#include file="includes/hero.inc" -->
         <div class="row-full pains">
-            <h2><span class="marker">The Question</span></h2>
+            <h2><span class="marker">The Challenge</span></h2>
             <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam autem veniam totam, porro consequuntur voluptatibus reprehenderit nobis dolores eaque repellendus, id, nam est optio commodi! In laudantium tempore, saepe quas.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum expedita minima laborum id eaque aspernatur quo saepe autem illo molestiae qui cupiditate, non, corporis architecto similique quam delectus officia aliquid.</p>
             </div>
-            
         </div>
+
         <div class="row-full solution">
-            <h2><span class="marker">Our Answer!</span></h2>
+            <h2><span class="marker">Our Philosophy</span></h2>
 
             <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam autem veniam totam, porro consequuntur voluptatibus reprehenderit nobis dolores eaque repellendus, id, nam est optio commodi! In laudantium tempore, saepe quas.</p>
-            </div>
-        </div>
-        <div class="row-full features">
-            <h2><span class="marker">Features</span></h2>
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam autem veniam totam, porro consequuntur voluptatibus reprehenderit nobis dolores eaque repellendus, id, nam est optio commodi! In laudantium tempore, saepe quas.</p>
+                <div class="row-full">
+                    <div class="four columns">
+                        <p><span>C</span>omply to Standard </p>
+                    </div>
+                    <div class="four columns">
+                        <p><span>A</span>rresting Design</p>
+                    </div>
+                    <div class="four columns">
+                        <p><span>F</span>orward thinking</p>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="row-full audience">
-            <h2><span class="marker">Our Target Audience</span></h2>
+            <h2><span class="marker">Audience</span></h2>
             <div class="content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam autem veniam totam, porro consequuntur voluptatibus reprehenderit nobis dolores eaque repellendus, id, nam est optio commodi! In laudantium tempore, saepe quas.</p>
             </div>
         </div>
-        
-      
-        <!--#include file="includes/footer.inc" -->
 
-        
+        <div class="row-full features">
+            <h2><span class="marker">Features</span></h2>
+            <div class="content">
+                <div class="row-full">
+                    <div class="four columns">
+                        <p><span>C</span>omply to Standard </p>
+                    </div>
+                    <div class="four columns">
+                        <p><span>A</span>rresting Design</p>
+                    </div>
+                    <div class="four columns">
+                        <p><span>F</span>orward thinking</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row-full contributors">
+                <h2><span class="marker">Contributors</span></h2>
+                <div class="contributors" >
+                    <div><span class="name">Alex Kuo</span><span>interface design, invisionapp guru</span> </div>
+                    <div><span class="name">Chris Bautista</span><span>coding, project site, version control addict</span></div>
+                    <div><span class="name">Fernando Mancilla</span><span>coding, client relations, blog site.</span> </div>
+
+                </div>
+       </div>
+        <!--#include file="includes/footer.inc" -->
     </div> <!-- ./ container -->
 </body>
 </html>

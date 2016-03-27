@@ -31,7 +31,7 @@
 	</div>
 	<div class="three columns about">
 		<h4>About</h4>
-		<div class="content">
+		<div >
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, nostrum numquam debitis voluptatem aliquam, hic inventore eligendi aut tempora libero quisquam iure saepe rerum qui. Labore excepturi accusamus nobis voluptas?
 			</p>

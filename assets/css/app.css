@@ -1,5 +1,6 @@
 body{
 	background: #343a40 url(../../imgs/bg_graph.png);
+	font-size: 16px;
 }
 
 header{
@@ -74,6 +75,7 @@ color: #FFF;
 h2 .marker {
 	text-align:center;
 }
+
 span.marker:before, span.marker:after {
     content: '';
     display: inline-block;
@@ -89,6 +91,11 @@ span.marker:before, span.marker:after {
 footer {
 	background-color: #343a40;
 	min-height: 80px;	
+	margin-top: 2em;
+}
+
+footer.row-full {
+    margin-top: 5em;
 }
 
 .row-hero {
@@ -100,9 +107,10 @@ footer {
 .title-logo{
 	letter-spacing: 1.2em;
     line-height: 2.2em;
+    text-transform: none;
 }
 
-.pains h2, .solution h2, .features h2, .audience h2 {
+.pains h2, .solution h2, .features h2, .audience h2, .contributors h2 {
 	text-align: center;
 }
 
@@ -113,8 +121,7 @@ footer {
 }
 
 .content p{
-	text-align:justify;
-	padding:1.3em 0;
+	padding:0;
 	line-height: 1.5em;
 }
 
@@ -128,6 +135,53 @@ footer li {
 	line-height: 1em;
 }
 
+blockquote {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 1em 3em;
+	text-align: center;
+}
+
+.contributors {
+	text-align: justify;
+	padding-bottom: 2em;
+}
+
+.contributors span {
+	line-height: 1.5em;
+    width: 45%;
+    padding: 1em;
+}
+
+.contributors span.name {
+	box-sizing: border-box;
+    /* padding: 0 8px 0 0; */
+    text-align: right;
+    /* padding: 0 10px; */
+    border-right: 2px solid #AAA;
+    margin: 0.5em 0;
+    height: 2em; 
+    display: inline-block;
+    font-weight: bold;
+}
+
+main {zf
+	margin:0 0 3em 0;
+}
+
+.solution p, .features p {
+	padding: 2.5em;
+    border-radius: 1em;
+    background-color: rgba(200,200,200,0.3);
+    min-height: 100px;
+}
+
+.solution p span {
+	float: left;
+    font-size: 5em;
+    padding: 0 0.1em 0 0;
+    line-height: 0.8em;
+}
 
 @media (min-width: 400px) {}
 
