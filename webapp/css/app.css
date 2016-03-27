@@ -41,6 +41,7 @@ header.row, main.row {
 .main-nav ul,  .main-nav ul li {
     display:inline;
     list-style: none;
+    position:relative;
 }
 
 
@@ -58,6 +59,26 @@ header.row, main.row {
     text-decoration: none;
 }
 
+li div.subclass{
+    display: none;
+    font-family: "Montserat", sans-serif;
+    position: absolute;
+    top: 24px;
+    left: -6px;
+    background-color: #1c3f77;
+    width: 130px;
+    padding:0 1em;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+li div.subclass li{
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #FFF;
+    padding: 0;
+    
+}
 
 
 .main-nav li:last-child a {
@@ -144,6 +165,7 @@ div.article-right::after{
     color: #1c3f77;
     position: absolute;
 }
+
 
 div.article-left::after{
     right: -23px;
