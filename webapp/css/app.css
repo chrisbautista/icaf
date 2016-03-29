@@ -7,29 +7,29 @@
 }
 
 body {
-    background-color: #FFF;
+     background: #DFDFDF;
     font-size: 18px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 header.row, main.row {
     width: 100%;
+    min-width: 500px;
 }
 
+
 .top {
-    position: absolute;
     background-color: #0cb395;
     padding: 12px;
-    clear: both;
     height: 27px;
     overflow: hidden;
-    top: 0;
-    right: 0;
 }
+
 
 .top li  {
     list-style: none;
     display: inline;
+    padding-right: 1em;
 }
 .top a {
     text-decoration: none;
@@ -38,10 +38,12 @@ header.row, main.row {
 
 }
 
+
 .main-nav ul,  .main-nav ul li {
-    display:inline;
+    display:block;
     list-style: none;
     position:relative;
+    width:100%;
 }
 
 
@@ -53,8 +55,6 @@ header.row, main.row {
     font-size:1.2em;
     width: auto;
     margin: 0;
-    padding: 0 1em 0 ;
-    border-right: 2px solid #1c3f77;
     font-family: "Montserat", sans-serif;
     text-decoration: none;
 }
@@ -89,16 +89,16 @@ li div.subclass li{
     background-image: url(images/hero.png);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 662px;
-    max-width: 912px;
 }
 
+.row-full.hero img {
+    width: 100%;
+    min-width: 460px;
+    height: auto;
+}
 
 .time-line {
-    background: url(../images/timeline.png);
-
     min-height: 100px;
-    background-repeat: repeat-y;
 }
 .article-right, .article-left{
       width:427px;
@@ -153,26 +153,7 @@ li div.subclass li{
 
 }
 
-div.article-left::after, 
-div.article-right::after{
-    content: "o";
-    background-color: #1c3f77;
-    width: 16px;
-    height: 16px;
-    overflow: hidden;
-    border-radius: 8px;
-    top: 50%;
-    color: #1c3f77;
-    position: absolute;
-}
 
-
-div.article-left::after{
-    right: -23px;
-}
-div.article-right::after{
-    left: -25px;
-}
 
 
 .article-left div.content {
@@ -181,6 +162,17 @@ div.article-right::after{
 
 .article-right div.content {
 float:right;
+}
+
+.article-left p {
+    width:80%;
+    text-align: left;
+}
+
+.article-right p {
+    width:80%;
+    text-align: right;
+    float:right;
 }
 
 
@@ -211,3 +203,156 @@ div.article-left:first-child{
     padding: 0;
     margin: 0;
 }
+
+.lecture-title{
+    display: none;
+}
+
+.main-lecture{
+    color: #1c3f77;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+.main-lecture aside {
+    display: none;
+    
+}
+
+.main-lecture aside li {
+    padding:0.3em;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 0.2em;
+    line-height: 1.1em;
+    display: inline-block;
+}
+
+
+
+.main-lecture li a {
+    text-decoration: none;
+    border-right: 1px solid #1c3f77;
+    padding: 0 1em 0;
+    margin:0;
+}
+
+.main-lecture li a:active,
+.main-lecture li a:visited {
+    color:#1c3f77;
+}
+
+.new-student{
+    float:left;
+}
+
+.old-student{
+    float:right;
+}
+
+@media (min-width: 400px) {
+
+    .time-line {
+            min-width: 500px;
+            background-repeat: repeat-y;
+    }      
+}
+
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {
+
+    .main-nav ul,  .main-nav ul li {
+        display:inline;
+        list-style: none;
+        position:relative;
+        width:100%;
+    }
+    
+    .main-nav a {
+        padding: 0 1em 0 ;
+        border-right: 2px solid #1c3f77;
+
+    }
+    
+    .top {
+    position: absolute;
+    clear: both;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    }
+
+    .main-nav {
+        margin-top: 2em;
+    }
+
+
+    div.article-left::after, 
+    div.article-right::after{
+        content: "o";
+        background-color: #1c3f77;
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+        border-radius: 8px;
+        top: 50%;
+        color: #1c3f77;
+        position: absolute;
+    }
+
+
+    div.article-left::after{
+        right: -23px;
+    }
+    div.article-right::after{
+        left: -25px;
+    }
+ 
+
+    .time-line {
+        min-width: 960px;
+        background: url(../images/timeline.png);
+        background-repeat: repeat-y;
+    }    
+    
+    .main-lecture aside {
+      display: inline-block;
+      margin-top: 2em;
+      position: fixed;
+      right: 2em;
+      top: 45%;
+      width: 20%;
+      text-align: right;
+    }
+    
+    .lecture-title {
+        display: block;
+        width: 100%;
+        max-width: 912px;
+        margin: 0 0.4em;
+        background-color: #0cb395;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Roboto Condensed", sans-serif;
+        color: #FFF;
+        text-shadow: -1px -2px 1px rgba(0,0,0,0.9);
+        font-size: 67px;
+        padding: 0.5em 0;
+    }    
+}
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+}
+
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {}
+
+
+/* Larger than Desktop HD */

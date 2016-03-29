@@ -4,5 +4,5 @@
     <p>Learning Web Development in style</p>
 
 
-    <div class="cta"><a class="btn btn-large" href="/webapp/">Demo</a></div>
+    <div class="cta"><a class="btn btn-large" href="webapp/">Demo</a></div>
 </div>
