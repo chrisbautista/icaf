@@ -51,6 +51,13 @@ header.row, main.row {
     color:#1c3f77;
     
 }
+
+.main-nav .subclass a, .main-nav .subclass a:visited {
+    color:#FFF;
+    
+}
+
+
 .main-nav a {
     font-size:1.2em;
     width: auto;
@@ -79,6 +86,7 @@ li div.subclass li{
     padding: 0;
     
 }
+
 
 
 .main-nav li:last-child a {
