@@ -25,7 +25,7 @@
  
 -->    
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Rationale</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/grid.css"> 
@@ -38,9 +38,60 @@
 
 
         <div class="row-full pains">
-            <h2><span class="marker">Inside Page Title</span></h2>
+            <h2><span class="marker">RATIONALE PAGE</span></h2>
             <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam autem veniam totam, porro consequuntur voluptatibus reprehenderit nobis dolores eaque repellendus, id, nam est optio commodi! In laudantium tempore, saepe quas.</p>
+                <p><strong>Font:</strong> We choose to use this font because we want a clean and a readable website, having in mind that we have a average young target we want to be able to communicate with them in a clean and readable website. According with many surveys nowadays most of the websites which has teenagers and young adults as target has used a flat and clean design to communicate with their targets.</p>
+                <p><strong>Colors:</strong> We decided to choose happy and strong colors to the website, again, having in mind our young target. The color was carefully chosen between many pallettes that we have pick, we used a special color combination website to choose the best palette. The target has a huge role in this choice having in mind that we are working mostly with young adults and teenagers. The color palette also was chose to make the website a happy looking and to have more emphasize in the main contents such as introduction and lessons.
+                </p>
+                <p><strong>Timeline:</strong> The timeline was a hard decision to take because it has become a main feature in the website. we chose the timeline to show the weeks because it seems to be very easily to see and to understand the concept of time. The timeline proved to be very efficient to navigate between the weeks on the website and that why we chose the timeline to be the main feature of the website.
+                </p>
+                <p><strong>Homepage:</strong> The home page was build basically to be the first part of the website, were the student can have a briefly look at what is happening in the course. At the home page we choose to show the timeline because we had in mind that the website has to have a focus in the weekly lessons and with the timeline we are able to show what is happening and which week the course is, very easily. We also choose to have a clean and flat design for the homepage, to make it easy to the student understand what is happening.
+                </p>
+                <p><strong>Lecture Page:</strong> We choose the lecture page to be out of the homepage because as I said before we want the homepage to have a focus in the Timeline. The lecture page was a simple design to have a big focus in the content, we also put two options after the content, Old students can go right to the pages that they choose to make it more fast and easy for them and for the new students they have to go to the introduction page and week 1 to make it easy to them, having in mind that they can be a little lost in the website because they are new in the course.
+                </p>
+                <p><strong>Blog Page:</strong> At the blog page we want to make it more familiar possible. We build a post very similar to all the posts in the web, with a space to the student make some comments and discuss about everything. The new feature that we try to apply was the timeline, same as the homepage we used the timeline to make it very easy to see and understand the posts. Students can look and quickly have an idea of were the post are, if it was a recent post or if it was a old post.
+                </p>
+            </div>
+
+            <div class="row-full">
+                <h2><span class="marker">Methodology</span></h2>
+
+                
+                <div class="content">
+                <h3>Project Files</h3>
+                <ul>
+                <li><a href="https://github.com/chrisbautista/icaf/blob/master/project-files/Sitemap%20and%20Info%20Architecture.xlsx">Sitemap and Information Architecture</a></li>
+                <li><a href="https://github.com/chrisbautista/icaf/blob/master/project-files/personas_1.docx">Persona 1</a></li>
+                <li><a href="https://github.com/chrisbautista/icaf/blob/master/project-files/personas_2.docx">Persona 2</a></li>
+                <li><a href="https://github.com/chrisbautista/icaf/blob/master/project-files/1-Home.png">Initial Wireframes</a></li>
+                </ul>
+                </div>
+
+                
+                <div class="content">
+                <h3>Trello Board</h3>
+                <p>The trello board is how we communicate with each other and also how we keep task and the accompanying conversation together.</p>
+
+                <a href="https://trello.com/b/GbuQ5V2D/bcit-wdd2"><img src="imgs/trello.png" alt=""></a>
+                </div>
+
+               
+                <div class="content">
+                 <h3>Github</h3>
+                <p>We use github to house our dev files and a way to keep versions.</p>
+
+                <a href="https://github.com/chrisbautista/icaf"><img src="imgs/github.png" alt=""></a>
+                </div>
+
+                
+                <div class="content">
+                <h3>Invision App</h3>
+                <p>Invision is where we house our wireframes and PSDs. We use this to communicate our opinions on the designs and our desired features. If </p>
+
+                <a href="https://projects.invisionapp.com/d/main#/projects/6813007"><img src="imgs/invision.png" alt=""></a>
+                </div>
+
+
             </div>
             
         </div>

@@ -33,9 +33,11 @@
 		<h4>About</h4>
 		<div >
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, nostrum numquam debitis voluptatem aliquam, hic inventore eligendi aut tempora libero quisquam iure saepe rerum qui. Labore excepturi accusamus nobis voluptas?
+				Project assigned by Alistair Calder to enable us to find our methodology and use the lessons he taught in the class.
 			</p>
 		</div>
 	</div>
 	<div class="row"></div>
+		<div class="row-fluid validate-link"><a href="http://validator.w3.org/check?uri=referer" target="_blank">HTML5 Valid</a>
+	    <span><!--#echo var="DATE_LOCAL" --></span></div>
 </footer>
