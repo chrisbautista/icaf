@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
 <!--  
 
  _____  _____ _      ____  _     ____  _____  _____   ____ ___  _    
@@ -24,7 +25,7 @@
  Winter 2015-2016
  
 -->    
-    <meta charset="UTF-8">
+
     <title>Introduction</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/default.css">
@@ -54,15 +55,30 @@
                     <li>A project site, which describes the details and links to various artifacts.</li>
                     <li>An introduction page, actually this article.</li>
                     <li>A rationale page, description of the proposal.</li>
-                    <li>A prototype site, present some mockups.</li>
+                    <li>A prototype site, a coded version of our pages. Mocked up pages</li>
                     <li>The blog page, to present articles about web development, will be built with Tumblr.</li>
-                    <li>Sitemap</li>
+                    <li>Sitemap in Excel</li>
                 </ul>
 
- 
-                <div class="row">
-                    
-                </div>
+              <div class="row-full contributors">
+                      <a name="contributors" id="contributors"> </a>
+                      <h2><span class="marker">Contributors</span></h2>
+                      <div class="contributors" >
+                          <div><span class="name">Alex Kuo</span><span>coding, interface design, rationale copy, invisionapp guru, color theory</span> </div>
+                          <div><span class="name">Chris Bautista</span><span>coding, project site(ui and copy), github addict, trello admin</span></div>
+                          <div><span class="name">Fernando Mancilla</span><span>coding, introduction copy, wireframes, client relations, blog site</span> </div>
+
+                      </div>
+              <br>
+
+              <div class="row-full ">
+                  
+                  <a href="rationale.shtml#methodology"><h4> Jump to Methodology</h4></a>
+
+              </div>
+
+              </div>
+
 
            </div>
 

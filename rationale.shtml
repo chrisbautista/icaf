@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
 <!--  
 
  _____  _____ _      ____  _     ____  _____  _____   ____ ___  _    
@@ -24,7 +25,7 @@
  Winter 2015-2016
  
 -->    
-    <meta charset="UTF-8">
+
     <title>Rationale</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/default.css">
@@ -54,44 +55,48 @@
             </div>
 
             <div class="row-full">
-                <h2><span class="marker">Methodology</span></h2>
-
-                
+                <h2><a id="methodology" name="methodology"></a><span class="marker">METHODOLOGY</span></h2>
                 <div class="content">
                 <h3>Project Files</h3>
                 <ul>
-                <li><a href="https://github.com/chrisbautista/icaf/blob/master/project-files/Sitemap%20and%20Info%20Architecture.xlsx">Sitemap and Information Architecture</a></li>
-                <li><a href="https://github.com/chrisbautista/icaf/blob/master/project-files/personas_1.docx">Persona 1</a></li>
-                <li><a href="https://github.com/chrisbautista/icaf/blob/master/project-files/personas_2.docx">Persona 2</a></li>
+                <li><a href="https://github.com/chrisbautista/icaf/raw/master/project-files/Sitemap%20and%20Info%20Architecture.xlsx">Sitemap and Information Architecture</a></li>
+                <li><a href="https://github.com/chrisbautista/icaf/raw/master/project-files/personas_1.docx">Persona 1</a></li>
+                <li><a href="https://github.com/chrisbautista/icaf/raw/master/project-files/personas_2.docx">Persona 2</a></li>
                 <li><a href="https://github.com/chrisbautista/icaf/blob/master/project-files/1-Home.png">Initial Wireframes</a></li>
+                <li><a href="https://github.com/chrisbautista/icaf/blob/master/project-files/DiscussionOnTrello-Study1.pdf">Conversations on Study 1</a></li>
                 </ul>
                 </div>
 
                 
                 <div class="content">
-                <h3>Trello Board</h3>
-                <p>The trello board is how we communicate with each other and also how we keep task and the accompanying conversation together.</p>
+                <h3>Trello Board (Project Management)</h3>
+                <p>The trello board is how we communicate with each other and also how we keep task and the accompanying conversation together.(click image to open trello board)</p>
 
                 <a href="https://trello.com/b/GbuQ5V2D/bcit-wdd2"><img src="imgs/trello.png" alt=""></a>
                 </div>
 
                
                 <div class="content">
-                 <h3>Github</h3>
-                <p>We use github to house our dev files and a way to keep versions.</p>
+                 <h3>Github (Version Control)</h3>
+                <p>We use github to house our dev files and a way to keep versions.(click image to open repository)</p>
 
                 <a href="https://github.com/chrisbautista/icaf"><img src="imgs/github.png" alt=""></a>
                 </div>
 
                 
                 <div class="content">
-                <h3>Invision App</h3>
-                <p>Invision is where we house our wireframes and PSDs. We use this to communicate our opinions on the designs and our desired features. If </p>
+                <h3>Invision App (Wireframes and Prototyping)</h3>
+                <p>Invision is where we house our wireframes and PSDs. We use this to communicate our opinions on the designs and our desired features.  Of course ideally you want the client involved and should be given access to the invision project (click image to open Invision Project)</p>
 
                 <a href="https://projects.invisionapp.com/d/main#/projects/6813007"><img src="imgs/invision.png" alt=""></a>
                 </div>
 
 
+              <div class="content">
+                  
+                  <a href="intro.shtml#contributors"><h4> Jump to Contributors</h4></a>
+
+              </div>
             </div>
             
         </div>
