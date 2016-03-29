@@ -15,7 +15,7 @@
 .container {
     position: relative;
     width: 100%;
-    max-width: 960px;
+    /*max-width: 960px;*/
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -27,11 +27,17 @@
     box-sizing: border-box;
 }
 
+.row-full {
+    margin:0px;
+    padding:0px;
+    clear:both;
+}
+
 
 /* For devices larger than 400px */
 
 @media (min-width: 400px) {
-    .container {
+    .row {
         width: 98%;
         padding: 0;
     }
@@ -41,7 +47,7 @@
 /* For devices larger than 550px */
 
 @media (min-width: 550px) {
-    .container {
+    .row {
         width: 90%;
         padding: 0 20px;
     }
@@ -116,7 +122,7 @@ body {
     /* currently ems cause chrome bug misinterpreting rems on body element */
     line-height: 1.6;
     font-weight: 400;
-    font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     color: #222;
 }
 
@@ -220,36 +226,42 @@ there.
 */
 
 
+.column,  .columns {
+    padding: 1em;
+}
+
+
+
 /* Larger than mobile */
 
-@media (min-width: 400px) {}
+/* @media (min-width: 400px) {} */
 
 
 /* Larger than phablet (also point when grid becomes active) */
 
-@media (min-width: 550px) {
+/* @media (min-width: 550px) {
    .container {
         width: 98%;
         padding: 0 5px;
     }
-}
+}*/
 
 
 /* Larger than tablet */
 
-@media (min-width: 750px) {
+/*@media (min-width: 750px) {
     .container {
         width: 90%;
         padding: 0 5px;
     }
-}
+}*/
 
 
 /* Larger than desktop */
 
-@media (min-width: 1000px) {}
+/*@media (min-width: 1000px) {}*/
 
 
 /* Larger than Desktop HD */
 
-@media (min-width: 1200px) {}
+/*@media (min-width: 1200px) {}*/

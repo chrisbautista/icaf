@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--  
+
+ _____  _____ _      ____  _     ____  _____  _____   ____ ___  _    
+/__ __\/  __// \__/|/  __\/ \   /  _ \/__ __\/  __/  /  _ \\  \//  __
+  / \  |  \  | |\/|||  \/|| |   | / \|  / \  |  \    | | // \  /   \/
+  | |  |  /_ | |  |||  __/| |_/\| |-||  | |  |  /_   | |_\\ / /    __
+  \_/  \____\\_/  \|\_/   \____/\_/ \|  \_/  \____\  \____//_/     \/
+
+
+
+   ____ _          _       _ _  ____ ___  ____  _____ ____  ____  _   _ ____  _ _   ____              _   _     _        
+  / ___| |__  _ __(_)___  ( | )/ ___/ _ \|  _ \| ____/ ___||  _ \| | | |  _ \( | ) | __ )  __ _ _   _| |_(_)___| |_ __ _ 
+ | |   | '_ \| '__| / __|  V V| |  | | | | | | |  _| \___ \| |_) | | | | | | |V V  |  _ \ / _` | | | | __| / __| __/ _` |
+ | |___| | | | |  | \__ \     | |__| |_| | |_| | |___ ___) |  __/| |_| | |_| |     | |_) | (_| | |_| | |_| \__ \ || (_| |
+  \____|_| |_|_|  |_|___/      \____\___/|____/|_____|____/|_|    \___/|____/      |____/ \__,_|\__,_|\__|_|___/\__\__,_|
+
+
+
+ BCIT: Comp1950 Web Design and Development 2
+ Professor: Alistair Calder
+ Winter 2015-2016
+ 
+-->    
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/grid.css"> 
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header class="row-full">
+
+            <div class="two columns title-logo">iCAF</div>
+
+            <nav class="nine columns " role="navigation">
+                <ul>
+                    <li><a href="/">Intro</a></li>
+                    <li><a href="/rationale-page.shtml">Rationale</a></li>
+                    <li><a href="/webapp/">Demo</a></li>
+                    <li><a href="http://www.tumblr.com/icaf-guru/">News</a></li>
+                    
+                </ul>
+            </nav>
+
+        </header>
+        <div class="row-full pains">
+            <h2><span class="marker">Inside Page Title</span></h2>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam autem veniam totam, porro consequuntur voluptatibus reprehenderit nobis dolores eaque repellendus, id, nam est optio commodi! In laudantium tempore, saepe quas.</p>
+            </div>
+            
+        </div>
+        
+      
+        <!--#include file="includes/footer.inc" -->
+
+
+    </div> <!-- ./ container -->
+</body>
+</html>
+
+<!-- template by : chris bautista -->

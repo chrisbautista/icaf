@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>initial webpage</title>
+	<link rel="stylesheet" href="../assets/css/normalize.css">
+	<link rel="stylesheet" href="../assets/css/grid.css">
+	<link rel="stylesheet" href="css/app.css">
+	
+</head>
+<body>
+<div class="container">
+    <header class="row">
+        <!--#include file="include/header.inc" -->   
+    </header>
+    
+    <main class="row lecture">
+       
+        <h1 class="lecture-title">Welcome to COMP 1950</h1>
+        <div class="row main-lecture">
+           <aside >
+               <nav><h4>Agenda</h4>
+                   <ul>
+                       <li><a href="#">Orientation</a></li>
+                       <li><a href="#">Introductions</a></li>
+                       <li><a href="#">Standards</a></li>
+                       <li><a href="#">Tools</a></li>
+                       <li><a href="#">Homework</a></li>
+                   </ul>
+               </nav>
+           </aside>    
+          
+           <div class="eleven columns">
+               <h2>Orientation</h2>
+               <p>Learn about the course to help you determine if this is the right class for you. Take a look at the course outline</p> 
+
+               <h2>Outline</h2> 
+                <pA week-by-week breakdown of what we will learn, homework and other deliverables></p>
+
+                <h3>Student Pages</h3>
+                <p>Each student will get personal webspace. This is not a continuation of your COMP1850 site (if you had one). This site is primarily for you to house your exercises, assignments, group work and more. Make it a site that is usable and functional.</p>
+
+                <p>Each student will be assigned web space for their homework and other files. All work performed on lab computers should be saved to personal files.</p>
+
+                <p>Your instructor will create webspaces for each student at the end of the first lecture. Please be present for this, as you will be entering your own password.</p>
+
+                <p>More information on Student Pages.</p>
+
+               <h2>Tools</h2> 
+                <p>Today, there are a lot of tools in Web Development, many of them are free with a few that have a cost that needs to be judged by how much you will use the tool.</p>
+
+                <h3>Your Tools</h3>
+                <p>What kind of tools are you using to do your web development? These can be anything from editors to image editors, services for testing browser deployments, language linters, and more.</p>
+
+                <p>Some of the tools used by web developers…</p>
+
+                <h3>Editors</h3>
+
+                <ul>
+                <li>Notepad++ - Text Editor (Win) * installed in BCIT lab computers</li> 
+                <li>Sublime Text - Text Editor (Mac/Win)</li>
+                <li>Coda - Web Dev IDE (Mac)</li>
+                <li>Dreamweaver - Web Dev IDE (Mac/Win)</li>
+                <li>Text Wrangler - Text Editor (Mac)</li>
+                <li>HTMLKit - Web Dev IDE (Win)</li>
+                </ul>
+                
+                <h3>FTP</h3>
+
+                <ul>
+                    <li>Filezilla - FTP tool (Win) * installed in BCIT lab computers *</li>
+                    <li>Cyberduck FTP - FTP tool (Mac)</li>
+                    <li>There are so many more! Maybe you use something not on the above list.</li>
+                </ul>
+           </div> 
+        </div>
+       
+        <div class="row"></div>
+    </main>
+    
+                
+    
+    
+</div>
+
+</body>
+</html>

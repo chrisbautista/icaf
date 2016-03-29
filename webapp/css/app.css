@@ -1,0 +1,358 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+.container {
+    max-width: 960px;
+        background: #DFDFDF;
+}
+
+body {
+     background: #DFDFDF;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header.row, main.row {
+    width: 100%;
+    min-width: 500px;
+}
+
+
+.top {
+    background-color: #0cb395;
+    padding: 12px;
+    height: 27px;
+    overflow: hidden;
+}
+
+
+.top li  {
+    list-style: none;
+    display: inline;
+    padding-right: 1em;
+}
+.top a {
+    text-decoration: none;
+    margin:0;
+    padding:0;
+
+}
+
+
+.main-nav ul,  .main-nav ul li {
+    display:block;
+    list-style: none;
+    position:relative;
+    width:100%;
+}
+
+
+.main-nav a, .main-nav a:visited {
+    color:#1c3f77;
+    
+}
+.main-nav a {
+    font-size:1.2em;
+    width: auto;
+    margin: 0;
+    font-family: "Montserat", sans-serif;
+    text-decoration: none;
+}
+
+li div.subclass{
+    display: none;
+    font-family: "Montserat", sans-serif;
+    position: absolute;
+    top: 24px;
+    left: -6px;
+    background-color: #1c3f77;
+    width: 130px;
+    padding:0 1em;
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+li div.subclass li{
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #FFF;
+    padding: 0;
+    
+}
+
+
+.main-nav li:last-child a {
+    border-right: none;
+}
+
+.hero {
+    background-image: url(images/hero.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.row-full.hero img {
+    width: 100%;
+    min-width: 460px;
+    height: auto;
+}
+
+.time-line {
+    min-height: 100px;
+}
+.article-right, .article-left{
+      width:427px;
+    max-width: 427px;
+    min-width:427px;
+    height: 253px;
+    background-color: #c0d731;
+    margin-left: 1em;
+    margin-top: 5em;
+    padding: 0;
+    position: relative;
+  margin-top: 2em;
+    clear:both;
+
+}
+
+.article-left{
+    float:left;
+}
+
+.article-right{
+  margin-right: 3em; 
+  float: right;
+}
+
+
+.article-left>div {
+    height: 253px;
+    overflow: hidden;
+}
+
+.article-left h1, .article-right h1 {
+    text-align: center;
+    font-size: 4em;
+        margin-top: -0.3em;
+}
+
+.article-left div.three.article-buttons {
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 85px;
+}
+
+.article-right div.three.article-buttons {
+    padding: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 85px;
+
+}
+
+
+
+
+.article-left div.content {
+    float:left;
+}
+
+.article-right div.content {
+float:right;
+}
+
+.article-left p {
+    width:80%;
+    text-align: left;
+}
+
+.article-right p {
+    width:80%;
+    text-align: right;
+    float:right;
+}
+
+
+div.date{
+    height: 128px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #FFF;
+}
+
+div.date div{
+    line-height: 0.95em;
+    text-align: center;
+    width: 100%;
+}
+
+div.day{font-size: 3em;}
+div.month{font-size: 2.5em;}
+div.year{font-size: 2em;}
+
+
+div.article-left:first-child{
+    margin-top: 0;
+}
+
+.article-buttons a {
+    padding: 0;
+    margin: 0;
+}
+
+.lecture-title{
+    display: none;
+}
+
+.main-lecture{
+    color: #1c3f77;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+.main-lecture aside {
+    display: none;
+    
+}
+
+.main-lecture aside li {
+    padding:0.3em;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 0.2em;
+    line-height: 1.1em;
+    display: inline-block;
+}
+
+
+
+.main-lecture li a {
+    text-decoration: none;
+    border-right: 1px solid #1c3f77;
+    padding: 0 1em 0;
+    margin:0;
+}
+
+.main-lecture li a:active,
+.main-lecture li a:visited {
+    color:#1c3f77;
+}
+
+.new-student{
+    float:left;
+}
+
+.old-student{
+    float:right;
+}
+
+@media (min-width: 400px) {
+
+    .time-line {
+            min-width: 500px;
+            background-repeat: repeat-y;
+    }      
+}
+
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {
+
+    .main-nav ul,  .main-nav ul li {
+        display:inline;
+        list-style: none;
+        position:relative;
+        width:100%;
+    }
+    
+    .main-nav a {
+        padding: 0 1em 0 ;
+        border-right: 2px solid #1c3f77;
+
+    }
+    
+    .top {
+    position: absolute;
+    clear: both;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    }
+
+    .main-nav {
+        margin-top: 2em;
+    }
+
+
+    div.article-left::after, 
+    div.article-right::after{
+        content: "o";
+        background-color: #1c3f77;
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+        border-radius: 8px;
+        top: 50%;
+        color: #1c3f77;
+        position: absolute;
+    }
+
+
+    div.article-left::after{
+        right: -23px;
+    }
+    div.article-right::after{
+        left: -25px;
+    }
+ 
+
+    .time-line {
+        min-width: 960px;
+        background: url(../images/timeline.png);
+        background-repeat: repeat-y;
+    }    
+    
+    .main-lecture aside {
+      display: inline-block;
+      margin-top: 2em;
+      position: fixed;
+      right: 2em;
+      top: 45%;
+      width: 20%;
+      text-align: right;
+    }
+    
+    .lecture-title {
+        display: block;
+        width: 100%;
+        max-width: 912px;
+        margin: 0 0.4em;
+        background-color: #0cb395;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Roboto Condensed", sans-serif;
+        color: #FFF;
+        text-shadow: -1px -2px 1px rgba(0,0,0,0.9);
+        font-size: 67px;
+        padding: 0.5em 0;
+    }    
+}
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+}
+
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {}
+
+
+/* Larger than Desktop HD */

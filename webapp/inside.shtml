@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>initial webpage</title>
+	<link rel="stylesheet" href="../assets/css/normalize.css">
+	<link rel="stylesheet" href="../assets/css/grid.css">
+	<link rel="stylesheet" href="css/app.css">
+	
+</head>
+<body>
+<div class="container">
+    <header class="row">
+        <!--#include file="include/header.inc" -->   
+    </header>
+    
+    <main class="row lecture">
+       
+        <h1 class="lecture-title">Welcome to COMP 1950</h1>
+        <div class="row main-lecture">
+           <aside >
+               <nav>
+                   <ul>
+                       <li><a href="#">topic 1</a></li>
+                       <li><a href="#">topic 2</a></li>
+                       <li><a href="#">topic 3</a></li>
+                       <li><a href="#">topic 4</a></li>
+                   </ul>
+               </nav>
+           </aside>    
+          
+           <div class="eleven columns">
+               <h2><a id="topic1" name="topic1">Topic 1</a></h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis dolores ad consequatur incidunt consequuntur, deserunt nemo dicta. Laboriosam rem soluta veniam eum delectus laudantium, unde nisi ratione est, aut molestias?</p>
+               <h2><a id="topic2" name="topic2">Topic 2</a></h2>
+                <p>Dolorem labore, voluptatum temporibus eos molestias libero alias sapiente cumque maxime quibusdam laboriosam dolor iste magni voluptate non magnam incidunt placeat. Minima a, ipsa neque. Quo consequuntur explicabo, animi repellendus.</p>
+                <p>Quia sint officia ipsa ea pariatur, laboriosam quidem a nisi nam dolore officiis voluptate error reprehenderit eos non harum magni dicta dignissimos autem quo molestiae voluptatem. Soluta quae, mollitia error!</p>
+                <p>Architecto adipisci, distinctio, harum corporis doloremque mollitia, quaerat id omnis molestias nesciunt, voluptatibus reprehenderit! Ratione similique iure obcaecati sunt, illo unde, excepturi non animi possimus exercitationem incidunt accusamus? Iusto, cumque.</p>     
+           </div> 
+        </div>
+       
+        <div class="row"></div>
+    </main>
+    
+    <div>
+        <div class="new-student">
+            <a href="#"><img src="images/new.png" alt=""></a>
+        </div>
+        <div class="old-student">
+            <a href="#"><img src="images/old.png" alt=""></a>
+        </div>
+    </div>    
+                
+    
+    
+</div>
+
+</body>
+</html>
