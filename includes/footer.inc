@@ -12,13 +12,18 @@
 		<address><span class="website"><a href="https://github.com/chrisbautista/icaf">Github Page</a></span></address>
 		</li>
 		<li><address><span class="website"><a href="https://projects.invisionapp.com/d/main#/console/6813007/146076211/preview">Invision</a></span></address></li>
+<<<<<<< HEAD
 		<li><address><span class="website"><a href="webapp/">Demo</a></span></address></li>
+=======
+		<li><address><span class="website"><a href="/webapp/">Demo</a></span></address></li>
+		<li><address><span class="website"><a href="rationale.shtml#methodology">Methodology</a></span></address></li>
+>>>>>>> origin/master
 		</ul>
 			
 		</div>
 	</div>
 
-	<div class="four columns contributors">
+	<div class="four columns footer-contributors">
 		<h4>Contributors</h4>
 		<div>
 		<ul>
@@ -33,8 +38,11 @@
 		<h4>About</h4>
 		<div >
 			<p>
-				Project assigned by Alistair Calder to enable us to find our methodology and use the lessons he taught in the class.
+				Hi we're team iCAF, the CAF stands for Chris, Alex and Fernando. Three web development geeks who were thrown by fate to build awesome websites. 
 			</p>
+			<p>	Project: for Web Design and Development 2 
+			<br> Professor: Alistair Calder.
+</p>
 		</div>
 	</div>
 	<div class="row"></div>

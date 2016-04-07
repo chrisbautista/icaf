@@ -13,7 +13,7 @@
     <header class="row">
         <!--#include file="include/header.inc" -->
         <div class="row-full"><div class="row-full hero">
-            <img src="css/images/hero.png">
+            <img src="css/images/hero.png" alt="hero image">
         </div></div>
         
     </header>
@@ -65,10 +65,7 @@
         <div class="row"></div>
     </main>
     
-        
-                
-    
-    
+  <!--#include file="include/footer.inc" -->
 </div>
 
 </body>

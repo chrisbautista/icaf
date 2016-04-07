@@ -15,6 +15,21 @@ header{
 	text-transform: uppercase;
 }
 
+a{
+    font-weight: bold;
+    color: rgba(0,0,0,0.9);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a h4:before{
+    content: "<";
+    font-size: 2em;
+}
+
 header nav {
 	width:100%;
 }
@@ -63,6 +78,10 @@ color: #FFF;
     border: 2px solid #FFF;
     padding: 0.5em 0.7em;
     border-radius: 0.2em;
+}
+
+.btn:hover, .cta a:hover {
+    background-color: rgba(255,255,255,0.5);
 }
 
 .btn.btn-large, .cta a {
@@ -136,9 +155,9 @@ footer li {
 }
 
 blockquote {
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: bold;
-	padding: 1em 3em;
+	padding: 1em 0;
 	text-align: center;
 }
 
@@ -148,10 +167,12 @@ blockquote {
 }
 
 .contributors span {
-	line-height: 1.5em;
-    width: 45%;
+    line-height: 1.5em;
+    width: 100%;
     padding: 1em;
+    display: block;
 }
+
 
 .contributors span.name {
 	box-sizing: border-box;
@@ -187,6 +208,20 @@ main {zf
     font-weight: bolder;
 }
 
+.content img {
+    width:98%;
+    height: auto;
+}
+
+.validate-link {
+    color:#CCC;
+}
+
+.validate-link a:hover {
+    color:yellow;
+    background-color: rgba(255,255,255,0.4)
+}
+
 @media (min-width: 400px) {}
 
 
@@ -209,9 +244,16 @@ main {zf
 		max-height: 2.8em;
 	}
 
+    .contributors span {
+        width: 45%;
+        display: inline-block;
+    }
 
-
-
+    blockquote {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1em 3em;
+    }
 }
 
 
