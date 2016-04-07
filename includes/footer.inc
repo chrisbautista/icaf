@@ -12,7 +12,7 @@
 		<address><span class="website"><a href="https://github.com/chrisbautista/icaf">Github Page</a></span></address>
 		</li>
 		<li><address><span class="website"><a href="https://projects.invisionapp.com/d/main#/console/6813007/146076211/preview">Invision</a></span></address></li>
-		<li><address><span class="website"><a href="/webapp/">Demo</a></span></address></li>
+		<li><address><span class="website"><a href="webapp/">Demo</a></span></address></li>
 		</ul>
 			
 		</div>
